@@ -1,13 +1,13 @@
 ﻿{
-  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
-  "id": "SpeedyPractice",
-  "name": "SpeedyPractice",
-  "author": "rakso20000",
-  "version": "1.0.0",
-  "description": "",
-  "gameVersion": "1.12.1",
-  "dependsOn": {
-    "BSIPA": "^4.0.5"
-  },
-  "features": []
+	"$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+	"id": "SpeedyPractice",
+	"name": "SpeedyPractice",
+	"author": "rakso20000",
+	"version": "1.0.0",
+	"description": "Beat Saber Plugin to increase the maximum song speed multiplier in practice mode",
+	"gameVersion": "1.12.1",
+	"dependsOn": {
+		"BSIPA": "^4.0.5"
+	},
+	"features": []
 }
