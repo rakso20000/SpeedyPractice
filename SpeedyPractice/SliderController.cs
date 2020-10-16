@@ -17,6 +17,9 @@ namespace SpeedyPractice {
 		
 		public void Start() {
 			
+			if (practiceView == null)
+				return;
+			
 			PercentSlider slider = Helper.GetValue<PercentSlider>(practiceView, "_speedSlider");
 			
 			int maxSpeed = PluginConfig.instance.maxSpeed;
