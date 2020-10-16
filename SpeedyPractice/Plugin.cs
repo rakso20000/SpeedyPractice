@@ -1,4 +1,6 @@
 ﻿using IPA;
+using IPA.Config;
+using IPA.Config.Stores;
 using IPA.Logging;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,10 +15,12 @@ namespace SpeedyPractice {
 		internal static IPALogger log { get; private set; }
 		
 		[Init]
-		public Plugin(IPALogger logger) {
+		public Plugin(IPALogger logger, Config config) {
 			
 			instance = this;
 			log = logger;
+			
+			PluginConfig.instance = config.Generated<PluginConfig>();
 			
 		}
 		
