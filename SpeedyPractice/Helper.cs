@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace TwitchFX {
+namespace SpeedyPractice {
 	
 	public class Helper {
 		
