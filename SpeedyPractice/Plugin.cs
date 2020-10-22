@@ -42,7 +42,7 @@ namespace SpeedyPractice {
 			
 			if (nextScene.name == "MenuViewControllers") {
 				
-				new GameObject("SpeedyLight").AddComponent<SliderController>();
+				new GameObject("SpeedyPracticeSliderController").AddComponent<SliderController>();
 				
 			}
 			
