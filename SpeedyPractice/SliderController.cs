@@ -17,8 +17,13 @@ namespace SpeedyPractice {
 		
 		public void Start() {
 			
-			if (practiceView == null)
+			if (practiceView == null) {
+				
+				Destroy(this);
+				
 				return;
+				
+			}
 			
 			PercentSlider slider = Helper.GetValue<PercentSlider>(practiceView, "_speedSlider");
 			
@@ -29,7 +34,7 @@ namespace SpeedyPractice {
 			slider.maxValue = maxSpeed / 100f;
 			slider.numberOfSteps = maxSpeed / 5 - 9;
 			
-			enabled = false;
+			Destroy(this);
 			
 		}
 		
