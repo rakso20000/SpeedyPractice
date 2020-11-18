@@ -4,7 +4,7 @@
 	"name": "SpeedyPractice",
 	"author": "rakso20000",
 	"version": "1.0.4",
-	"description": "Fixes the practice speed slider to go up in steps of 5% again and lets you increase the maximum speed.",
+	"description": "Increases the maximum practice mode speed multiplier to 300% (configurable).",
 	"gameVersion": "1.13.0",
 	"dependsOn": {
 		"BSIPA": "^4.1.3"
