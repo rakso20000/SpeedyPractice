@@ -10,6 +10,7 @@ namespace SpeedyPractice {
 		
 		public virtual int minSpeed { get; set; } = 50;
 		public virtual int maxSpeed { get; set; } = 300;
+		public virtual int stepSize { get; set; } = 5;
 		
 	}
 	

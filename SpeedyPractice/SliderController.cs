@@ -29,13 +29,17 @@ namespace SpeedyPractice {
 			
 			int minSpeed = PluginConfig.instance.minSpeed;
 			int maxSpeed = PluginConfig.instance.maxSpeed;
+			int stepSize = PluginConfig.instance.stepSize;
 			
-			minSpeed -= minSpeed % 5;
-			maxSpeed -= maxSpeed % 5;
+			if (stepSize <= 0)
+				stepSize = 1;
+			
+			minSpeed -= minSpeed % stepSize;
+			maxSpeed -= maxSpeed % stepSize;
 			
 			slider.minValue = minSpeed / 100f;
 			slider.maxValue = maxSpeed / 100f;
-			slider.numberOfSteps = (maxSpeed - minSpeed) / 5 + 1;
+			slider.numberOfSteps = (maxSpeed - minSpeed) / stepSize + 1;
 			
 			Destroy(this);
 			
