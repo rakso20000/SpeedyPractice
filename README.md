@@ -8,7 +8,8 @@ Beat Saber's practice mode speed multiplier is limited to 200%, but **fear not**
 
 ~~Beat Saber v1.12.1 has decreased the maximum song speed multiplier accessible via practice mode to 150%, but **fear not** as SpeedyPractice comes to the rescue!~~
 
-SpeedyPractice ~~increases the multiplier to 200%~~ ~~adjusts the slider steps to properly reflect the maximum song speed multiplier but you can also increase the maximum multiplier~~ increases the multiplier to 300% but you can also change this value in the config file at `Beat Saber\UserData\SpeedyPractice.json`. The slider will increase in steps of 5%, just like in the base game before v1.12.2.
+SpeedyPractice increases the maximum speed multiplier to 300% but you can also change this value in the config file at `Beat Saber\UserData\SpeedyPractice.json`.  
+Additionally, you can change the minimum speed multiplier and the slider step size in the config file.
 
 ## Installation
 
