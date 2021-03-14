@@ -34,8 +34,7 @@ namespace SpeedyPractice {
 			if (stepSize <= 0)
 				stepSize = 1;
 			
-			minSpeed -= minSpeed % stepSize;
-			maxSpeed -= maxSpeed % stepSize;
+			maxSpeed -= (maxSpeed - minSpeed) % stepSize;
 			
 			slider.minValue = minSpeed / 100f;
 			slider.maxValue = maxSpeed / 100f;
