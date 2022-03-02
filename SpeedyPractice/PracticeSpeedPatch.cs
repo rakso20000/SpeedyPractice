@@ -6,7 +6,7 @@ using System;
 namespace SpeedyPractice {
 	[HarmonyPatch(typeof(PracticeViewController), "DidActivate")]
 	static class PracticeSpeedPatch {
-		static void Postfix(bool firstActivation, PercentSlider ____speedSlider) {
+		static void Postfix(bool firstActivation, PercentSlider ____speedSlider, PracticeSettings ____practiceSettings) {
 			if(!firstActivation)
 				return;
 
@@ -20,7 +20,8 @@ namespace SpeedyPractice {
 			____speedSlider.maxValue = maxSpeed / 100f;
 			____speedSlider.numberOfSteps = (maxSpeed - minSpeed) / stepSize + 1;
 
-			____speedSlider.value = Math.Max(____speedSlider.minValue, 1);
+			____speedSlider.value = Mathf.Clamp(____practiceSettings.songSpeedMul, ____speedSlider.minValue, ____speedSlider.maxValue);
+			____practiceSettings.songSpeedMul = ____speedSlider.value;
 		}
 	}
 }
